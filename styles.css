@@ -1,0 +1,156 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #616161;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.0rem;
+    color: #ff69b4;
+    margin: 20px 0;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ff69b4;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #ff69b4;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #ff1493;
+    transform: translateY(-2px);
+}
+
+#animasi {
+    width: 50px;
+    height: 50px;
+    background-color: #44ff14;
+    border-radius: 50%;
+    position: absolute;
+    display: none; /* Hide animation initially */
+}
+
+#countdown {
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    color: #ff69b4;
+    display: none;
+}
+
+.countdown-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.countdown-bottom {
+    top: calc(50% + 150px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#text1, #text2 {
+    text-align: center;
+}
+
+#text1 {
+    margin-top: 10%;
+    position: absolute;
+    top: 5%;
+}
+
+#animation-controls, {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#animation-controls {
+    top: 100px;
+}
+
+#time-controls {
+    display: none;
+}
+#action-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%; /* Posisi di bawah text2 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Hide action controls initially */
+}
+
+#text2 {
+    margin-top: 5%;
+    display: none;
+    position: absolute;
+    top: 0%; /* Adjust this value as needed */
+    text-align: center;
+}
+
+#text2 .btn {
+    margin-top: 10px;
+}
+
+#animation-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for actual center */
+}
+
+.btn {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #ff1493;
+    transform: translateY(-2px);
+}
